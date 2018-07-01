@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Custom_Bottom_Bar">
+        <attr name="drawable_active" format="reference" />
+        <attr name="drawable_normal" format="reference" />
+        <attr name="isCheckDrawableActive" format="boolean" />
+        <attr name="colorBackground" format="color" />
+
+        <attr name="color_txt_normal" format="color" />
+        <attr name="color_txt_active" format="color" />
+        <attr name="txt_custom" format="string" />
+        <attr name="isColor" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/violet"
+            android:weightSum="4">
+
+            <com.example.tuant.custombottombar.ItemBottomBar
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                app:color_txt_active="@color/colorPrimary"
+                app:color_txt_normal="@color/white"
+                app:drawable_active="@drawable/ic_home_active"
+                app:drawable_normal="@drawable/ic_home_normal"
+                app:isCheckDrawableActive="true"
+                app:isColor="true"
+                app:txt_custom="Home" />
+
+
+            <com.example.tuant.custombottombar.ItemBottomBar
+                android:id="@+id/football"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                app:color_txt_active="@color/colorPrimary"
+                app:color_txt_normal="@color/white"
+                app:drawable_active="@drawable/ic_football_active"
+                app:drawable_normal="@drawable/ic_football_normal"
+                app:isCheckDrawableActive="false"
+                app:isColor="false"
+                app:txt_custom="Football" />
+
+
+            <com.example.tuant.custombottombar.ItemBottomBar
+                android:id="@+id/cup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                app:color_txt_active="@color/colorPrimary"
+                app:color_txt_normal="@color/white"
+                app:drawable_active="@drawable/ic_cup_active"
+                app:drawable_normal="@drawable/ic_cup_normal"
+                app:isCheckDrawableActive="false"
+                app:isColor="false"
+                app:txt_custom="Cup" />
+
+
+            <com.example.tuant.custombottombar.ItemBottomBar
+                android:id="@+id/notifycation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                app:color_txt_active="@color/colorPrimary"
+                app:color_txt_normal="@color/white"
+                app:drawable_active="@drawable/ic_notification_active"
+                app:drawable_normal="@drawable/ic_notification_normal"
+                app:isCheckDrawableActive="false"
+                app:isColor="false"
+                app:txt_custom="Notification" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
